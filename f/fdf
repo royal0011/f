@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\common\service.py", line 71, in start
+    self.process = subprocess.Popen(cmd, env=self.env,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vboxuser\anaconda3\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\vboxuser\anaconda3\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] Impossibile trovare il file specificato
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vboxuser\Desktop\Youtube-viewbot-main\main.py", line 49, in <module>
+    bot.main()
+  File "C:\Users\vboxuser\Desktop\Youtube-viewbot-main\main.py", line 45, in main
+    self.open_url(self.sleeptime, next(self.proxies))
+  File "C:\Users\vboxuser\Desktop\Youtube-viewbot-main\main.py", line 26, in open_url
+    self.options = webdriver.Chrome()
+                   ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 69, in __init__
+    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
+  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 89, in __init__
+    self.service.start()
+  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\common\service.py", line 81, in start
+    raise WebDriverException(
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
