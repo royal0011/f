@@ -1,60 +1,18 @@
+Process Process-1:
 Traceback (most recent call last):
-  File "C:\Users\vboxuser\Desktop\Youtube-viewbot-main\main.py", line 49, in <module>
-    bot.main()
-  File "C:\Users\vboxuser\Desktop\Youtube-viewbot-main\main.py", line 45, in main
-    self.open_url(self.sleeptime, next(self.proxies))
-  File "C:\Users\vboxuser\Desktop\Youtube-viewbot-main\main.py", line 35, in open_url
-    self.browser = uc.Chrome(options=self.options)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\undetected_chromedriver\__init__.py", line 401, in __init__
-    super(Chrome, self).__init__(
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 69, in __init__
-    super().__init__(DesiredCapabilities.CHROME['browserName'], "goog",
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\chromium\webdriver.py", line 92, in __init__
-    super().__init__(
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 272, in __init__
-    self.start_session(capabilities, browser_profile)
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\undetected_chromedriver\__init__.py", line 589, in start_session
-    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 364, in start_session
-    response = self.execute(Command.NEW_SESSION, parameters)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: unknown error: cannot connect to chrome at 127.0.0.1:51018
-from session not created: This version of ChromeDriver only supports Chrome version 114
-Current browser version is 117.0.5938.150
-Stacktrace:
-Backtrace:
-        GetHandleVerifier [0x0070A813+48355]
-        (No symbol) [0x0069C4B1]
-        (No symbol) [0x005A5358]
-        (No symbol) [0x005C61AC]
-        (No symbol) [0x005C06B4]
-        (No symbol) [0x005C0491]
-        (No symbol) [0x005F0C55]
-        (No symbol) [0x005F093C]
-        (No symbol) [0x005EA536]
-        (No symbol) [0x005C82DC]
-        (No symbol) [0x005C93DD]
-        GetHandleVerifier [0x0096AABD+2539405]
-        GetHandleVerifier [0x009AA78F+2800735]
-        GetHandleVerifier [0x009A456C+2775612]
-        GetHandleVerifier [0x007951E0+616112]
-        (No symbol) [0x006A5F8C]
-        (No symbol) [0x006A2328]
-        (No symbol) [0x006A240B]
-        (No symbol) [0x00694FF7]
-        BaseThreadInitThunk [0x76047D59+25]
-        RtlInitializeExceptionChain [0x77B6B74B+107]
-        RtlClearBits [0x77B6B6CF+191]
-
-Exception ignored in: <function Chrome.__del__ at 0x00000222E94B2C00>
-Traceback (most recent call last):
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\undetected_chromedriver\__init__.py", line 644, in __del__
-  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\undetected_chromedriver\__init__.py", line 632, in quit
-OSError: [WinError 6] Handle non valido
-
-(base) C:\Users\vboxuser\Desktop\Youtube-viewbot-main>^A^A
+  File "C:\Users\vboxuser\anaconda3\Lib\multiprocessing\process.py", line 314, in _bootstrap
+    self.run()
+  File "C:\Users\vboxuser\anaconda3\Lib\multiprocessing\process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\vboxuser\anaconda3\Lib\site-packages\undetected_chromedriver\dprocess.py", line 59, in _start_detached
+    p = Popen([executable, *args], stdin=PIPE, stdout=PIPE, stderr=PIPE, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vboxuser\anaconda3\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\vboxuser\anaconda3\Lib\subprocess.py", line 1462, in _execute_child
+    args = list2cmdline(args)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vboxuser\anaconda3\Lib\subprocess.py", line 608, in list2cmdline
+    for arg in map(os.fsdecode, seq):
+  File "<frozen os>", line 824, in fsdecode
+TypeError: expected str, bytes or os.PathLike object, not NoneType
